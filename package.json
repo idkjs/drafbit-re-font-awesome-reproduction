@@ -1,0 +1,31 @@
+{
+  "name": "drafbit-re-font-awesome",
+  "version": "0.1.0",
+  "scripts": {
+    "build": "bsb -make-world",
+    "start": "bsb -make-world -w -ws _ ",
+    "clean": "bsb -clean-world",
+    "server": "moduleserve ./ --port 8000",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "BuckleScript",
+    "ReasonReact",
+    "reason-react"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@draftbit/re-font-awesome": "^1.2.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.34",
+    "@fortawesome/free-regular-svg-icons": "^5.15.2",
+    "@fortawesome/react-fontawesome": "^0.1.14",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "reason-react": ">=0.9.1"
+  },
+  "devDependencies": {
+    "bs-platform": "^9.0.1",
+    "moduleserve": "^0.9.1"
+  }
+}
