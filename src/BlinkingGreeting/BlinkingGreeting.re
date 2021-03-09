@@ -16,16 +16,17 @@ let make = (~children) => {
 
   let style =
     if (show) {
-      ReactDOMRe.Style.make(~opacity="1", ~transition="opacity 1s", ());
+      ReactDOM.Style.make(~opacity="1", ~transition="opacity 1s", ());
     } else {
-      ReactDOMRe.Style.make(~opacity="0", ~transition="opacity 1s", ());
+      ReactDOM.Style.make(~opacity="0", ~transition="opacity 1s", ());
     };
 
   <div style>
-  <FontAwesome.Icon icon=FontAwesome.FreeRegular.faClock />
-  children
-<FontAwesome.Icon icon=FontAwesome.FreeSolid.faXRay className="MyIcon" />
-
-
+    <Icon icon=FontAwesome.FreeRegular.faClock />
+    children
+    <Icon icon=FontAwesome.FreeSolid.faXRay className="MyIcon" />
+//   <FontAwesome.Icon icon=FontAwesome.FreeRegular.faClock />
+//   children
+// <FontAwesome.Icon icon=FontAwesome.FreeSolid.faXRay className="MyIcon" />
    </div>;
 };

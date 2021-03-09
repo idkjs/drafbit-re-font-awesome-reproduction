@@ -4,9 +4,7 @@ var React = require("react");
 var ReactDom = require("react-dom");
 var ExampleStyles$DrafbitReFontAwesome = require("./ExampleStyles.bs.js");
 var BlinkingGreeting$DrafbitReFontAwesome = require("./BlinkingGreeting/BlinkingGreeting.bs.js");
-var FetchedDogPictures$DrafbitReFontAwesome = require("./FetchedDogPictures/FetchedDogPictures.bs.js");
-var ReducerFromReactJSDocs$DrafbitReFontAwesome = require("./ReducerFromReactJSDocs/ReducerFromReactJSDocs.bs.js");
-var ReasonUsingJSUsingReason$DrafbitReFontAwesome = require("./ReasonUsingJSUsingReason/ReasonUsingJSUsingReason.bs.js");
+var BlinkingGreetingReact$DrafbitReFontAwesome = require("./BlinkingGreetingReact/BlinkingGreetingReact.bs.js");
 
 var style = document.createElement("style");
 
@@ -29,14 +27,12 @@ function makeContainer(text) {
 }
 
 ReactDom.render(React.createElement(BlinkingGreeting$DrafbitReFontAwesome.make, {
-          children: "Hello!"
+          children: "Hello Reason!"
         }), makeContainer("Blinking Greeting"));
 
-ReactDom.render(React.createElement(ReducerFromReactJSDocs$DrafbitReFontAwesome.make, {}), makeContainer("Reducer From ReactJS Docs"));
-
-ReactDom.render(React.createElement(FetchedDogPictures$DrafbitReFontAwesome.make, {}), makeContainer("Fetched Dog Pictures"));
-
-ReactDom.render(React.createElement(ReasonUsingJSUsingReason$DrafbitReFontAwesome.make, {}), makeContainer("Reason Using JS Using Reason"));
+ReactDom.render(React.createElement(BlinkingGreetingReact$DrafbitReFontAwesome.make, {
+          children: "Hello Rescript!"
+        }), makeContainer("Blinking Greeting React"));
 
 exports.style = style;
 exports.makeContainer = makeContainer;

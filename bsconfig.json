@@ -15,7 +15,7 @@
   "suffix": ".bs.js",
   "namespace": true,
   "bs-dependencies": [
-    "reason-react",
+    "@rescript/react",
     "@draftbit/re-font-awesome"
   ],
   "refmt": 3
