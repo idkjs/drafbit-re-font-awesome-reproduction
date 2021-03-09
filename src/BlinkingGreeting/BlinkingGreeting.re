@@ -22,10 +22,8 @@ let make = (~children) => {
     };
 
   <div style>
-  <FontAwesome.Icon icon=FontAwesome.FreeRegular.faClock />
-  children
-<FontAwesome.Icon icon=FontAwesome.FreeSolid.faXRay className="MyIcon" />
-
-
-   </div>;
+    <FontAwesome.Icon icon=FontAwesome.FreeRegular.faClock />
+    children
+    <FontAwesome.Icon icon=FontAwesome.FreeSolid.faXRay className="MyIcon" />
+  </div>;
 };
